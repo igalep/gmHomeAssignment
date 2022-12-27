@@ -30,11 +30,11 @@ if __name__ == '__main__':
                     print(f'{ID} is not a valid Israeli ID number \n')
             case '2':
                 print('Insert partial Israeli ID number (without control digit)')        
-                missigng_ID = input()
+                missing_ID = input()
 
-                if input_validation(missigng_ID, 8) is False:
+                if input_validation(missing_ID, 8) is False:
                     print('Your input is wrong , please try again')
                     continue
 
-                ans = validator.find_control_digit(missigng_ID)
-                print(f'The control digit of {missigng_ID} is {ans} \n')
+                ans = validator.find_control_digit(missing_ID)
+                print(f'The control digit of {missing_ID} is {ans} \n')
